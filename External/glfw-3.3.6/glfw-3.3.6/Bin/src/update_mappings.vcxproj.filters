@@ -1,0 +1,24 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <CustomBuild Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glfw-3.3.6\glfw-3.3.6\Bin\CMakeFiles\7ad3eaef73dff109977202cee22d954d\update_mappings.rule">
+      <Filter>CMake Rules</Filter>
+    </CustomBuild>
+    <CustomBuild Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glfw-3.3.6\glfw-3.3.6\src\CMakeLists.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glfw-3.3.6\glfw-3.3.6\src\mappings.h.in">
+      <Filter>Header Files</Filter>
+    </None>
+    <None Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glfw-3.3.6\glfw-3.3.6\CMake\GenerateMappings.cmake" />
+    <None Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glfw-3.3.6\glfw-3.3.6\Bin\src\CMakeFiles\update_mappings" />
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="CMake Rules">
+      <UniqueIdentifier>{72EF9D15-38D9-3365-82FE-015B947D6301}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{1D7064A0-8382-3D69-A216-90A72FD05A6C}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+</Project>

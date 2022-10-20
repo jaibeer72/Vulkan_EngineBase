@@ -1,0 +1,932 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="17.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <PreferredToolArchitecture>x64</PreferredToolArchitecture>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ResolveNugetPackages>false</ResolveNugetPackages>
+  </PropertyGroup>
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="MinSizeRel|x64">
+      <Configuration>MinSizeRel</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="RelWithDebInfo|x64">
+      <Configuration>RelWithDebInfo</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{7C247830-6D17-35C5-BBE5-2D576F103DD3}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <WindowsTargetPlatformVersion>10.0.19041.0</WindowsTargetPlatformVersion>
+    <Platform>x64</Platform>
+    <ProjectName>ALL_BUILD</ProjectName>
+    <VCProjectUpgraderObjectName>NoUpgrade</VCProjectUpgraderObjectName>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'" Label="Configuration">
+    <ConfigurationType>Utility</ConfigurationType>
+    <CharacterSet>MultiByte</CharacterSet>
+    <PlatformToolset>v143</PlatformToolset>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>10.0.20506.1</_ProjectFileVersion>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='Release|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+    <IntDir Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">$(Platform)\$(Configuration)\$(ProjectName)\</IntDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">
+    <Midl>
+      <AdditionalIncludeDirectories>%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <OutputDirectory>$(ProjectDir)/$(IntDir)</OutputDirectory>
+      <HeaderFileName>%(Filename).h</HeaderFileName>
+      <TypeLibraryName>%(Filename).tlb</TypeLibraryName>
+      <InterfaceIdentifierFileName>%(Filename)_i.c</InterfaceIdentifierFileName>
+      <ProxyFileName>%(Filename)_p.c</ProxyFileName>
+    </Midl>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <CustomBuild Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\CMakeLists.txt">
+      <UseUtf8Encoding>Always</UseUtf8Encoding>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Building Custom Rule D:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm" "-BD:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm/Bin" --check-stamp-file "D:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm/Bin/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\CMakeFiles\3.23.0\CMakeCXXCompiler.cmake;D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\CMakeFiles\3.23.0\CMakeRCCompiler.cmake;D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\CMakeFiles\3.23.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='Release|x64'">Building Custom Rule D:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='Release|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm" "-BD:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm/Bin" --check-stamp-file "D:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm/Bin/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\CMakeFiles\3.23.0\CMakeCXXCompiler.cmake;D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\CMakeFiles\3.23.0\CMakeRCCompiler.cmake;D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\CMakeFiles\3.23.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='Release|x64'">D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='Release|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">Building Custom Rule D:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm" "-BD:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm/Bin" --check-stamp-file "D:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm/Bin/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\CMakeFiles\3.23.0\CMakeCXXCompiler.cmake;D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\CMakeFiles\3.23.0\CMakeRCCompiler.cmake;D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\CMakeFiles\3.23.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='MinSizeRel|x64'">false</LinkObjects>
+      <Message Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">Building Custom Rule D:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm/CMakeLists.txt</Message>
+      <Command Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm" "-BD:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm/Bin" --check-stamp-file "D:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm/Bin/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal &amp; call :cmErrorLevel %errorlevel% &amp; goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd</Command>
+      <AdditionalInputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXCompilerABI.cpp;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCXXInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCommonLanguageInclude.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeCompilerIdDetection.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompileFeatures.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerABI.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineCompilerId.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeDetermineSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeFindBinUtils.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeGenericSystem.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeInitializeConfigs.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeLanguageInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitIncludeInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseImplicitLinkInfo.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeParseLibraryArchitecture.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCCompiler.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeRCInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystem.cmake.in;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInformation.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeSystemSpecificInitialize.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCXXCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestCompilerCommon.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CMakeTestRCCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ADSP-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMCC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\ARMClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\AppleClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Borland-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\CMakeCommonCompilerMacros.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Clang-DetermineCompilerInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Comeau-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Compaq-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Cray-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Embarcadero-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Fujitsu-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\FujitsuClang-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GHS-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\GNU-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\HP-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IAR-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMCPP-CXX-DetermineVersionInternal.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IBMClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Intel-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\IntelLLVM-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\LCC-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\MSVC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVHPC-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\NVIDIA-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\OpenWatcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PGI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\PathScale-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SCO-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\SunPro-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\TI-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\VisualAge-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\Watcom-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XL-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\XLClang-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Compiler\zOS-CXX-DetermineCompiler.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\CompilerId\VS-10.vcxproj.in;C:\Program Files\CMake\share\cmake-3.23\Modules\Internal\FeatureTesting.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-Determine-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC-CXX.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows-MSVC.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\Windows.cmake;C:\Program Files\CMake\share\cmake-3.23\Modules\Platform\WindowsPaths.cmake;D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\CMakeFiles\3.23.0\CMakeCXXCompiler.cmake;D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\CMakeFiles\3.23.0\CMakeRCCompiler.cmake;D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\CMakeFiles\3.23.0\CMakeSystem.cmake;%(AdditionalInputs)</AdditionalInputs>
+      <Outputs Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\CMakeFiles\generate.stamp</Outputs>
+      <LinkObjects Condition="'$(Configuration)|$(Platform)'=='RelWithDebInfo|x64'">false</LinkObjects>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\ZERO_CHECK.vcxproj">
+      <Project>{9BBBAAAE-013D-3539-B934-10CC1324C2C2}</Project>
+      <Name>ZERO_CHECK</Name>
+      <ReferenceOutputAssembly>false</ReferenceOutputAssembly>
+      <CopyToOutputDirectory>Never</CopyToOutputDirectory>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\bug\test-bug_ms_vec_static.vcxproj">
+      <Project>{5E05BD94-5C62-388C-AD4F-CD7AD82E2746}</Project>
+      <Name>test-bug_ms_vec_static</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_cpp_constexpr.vcxproj">
+      <Project>{8643F295-33B7-3E54-8CCC-19ECFE7BA436}</Project>
+      <Name>test-core_cpp_constexpr</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_cpp_defaulted_ctor.vcxproj">
+      <Project>{DC717B6A-BB56-3F41-A168-A083E43C3788}</Project>
+      <Name>test-core_cpp_defaulted_ctor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_force_aligned_gentypes.vcxproj">
+      <Project>{391F65EC-9C66-3322-A259-61EC0E67019C}</Project>
+      <Name>test-core_force_aligned_gentypes</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_force_arch_unknown.vcxproj">
+      <Project>{E94147BF-E353-3030-A137-30EC76192A53}</Project>
+      <Name>test-core_force_arch_unknown</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_force_compiler_unknown.vcxproj">
+      <Project>{F7709D39-6C14-3C7E-8FAE-0511C7F4B838}</Project>
+      <Name>test-core_force_compiler_unknown</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_force_ctor_init.vcxproj">
+      <Project>{88EB50AE-D396-39BB-AB25-77E3F3984F4F}</Project>
+      <Name>test-core_force_ctor_init</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_force_cxx03.vcxproj">
+      <Project>{46E361A7-0C09-33F3-BAC3-AFF3BC691755}</Project>
+      <Name>test-core_force_cxx03</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_force_cxx98.vcxproj">
+      <Project>{F7EBCF7C-EECB-3FFD-BD36-D631E89E70E7}</Project>
+      <Name>test-core_force_cxx98</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_force_cxx_unknown.vcxproj">
+      <Project>{52907377-D150-37D7-B0B4-CCD8D8750E40}</Project>
+      <Name>test-core_force_cxx_unknown</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_force_explicit_ctor.vcxproj">
+      <Project>{BB17914F-6CB4-36B1-867B-29DE9D034225}</Project>
+      <Name>test-core_force_explicit_ctor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_force_inline.vcxproj">
+      <Project>{7CA93FA0-1BFC-36B6-8070-5D71564593F8}</Project>
+      <Name>test-core_force_inline</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_force_platform_unknown.vcxproj">
+      <Project>{BA8062B9-FC6E-3946-AC31-5D454C9BF145}</Project>
+      <Name>test-core_force_platform_unknown</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_force_pure.vcxproj">
+      <Project>{A352F5AE-CB37-3073-AC74-A4300D80C68F}</Project>
+      <Name>test-core_force_pure</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_force_quat_wxyz.vcxproj">
+      <Project>{6D542E8B-FBA9-3BF2-A6D5-012EB5B5B9D8}</Project>
+      <Name>test-core_force_quat_wxyz</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_force_unrestricted_gentype.vcxproj">
+      <Project>{193C0A89-9B91-3CF6-B736-6B20EBEB7D89}</Project>
+      <Name>test-core_force_unrestricted_gentype</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_force_xyzw_only.vcxproj">
+      <Project>{8EBEBDE9-5043-36B4-B155-D8CA6480E465}</Project>
+      <Name>test-core_force_xyzw_only</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_func_common.vcxproj">
+      <Project>{5A36E1A6-F616-33AA-AD8C-A0A92C19BAE5}</Project>
+      <Name>test-core_func_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_func_exponential.vcxproj">
+      <Project>{25B95DA5-9EDF-35A3-A65D-5EC345429216}</Project>
+      <Name>test-core_func_exponential</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_func_geometric.vcxproj">
+      <Project>{FCE46BA8-A77F-3A16-AFB0-0EE5EA9ECAFD}</Project>
+      <Name>test-core_func_geometric</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_func_integer.vcxproj">
+      <Project>{905E0462-657E-3AB1-B1D5-5BB2A8476241}</Project>
+      <Name>test-core_func_integer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_func_integer_bit_count.vcxproj">
+      <Project>{C4D9D52B-1C0C-3D1C-B37B-72AB4E29F457}</Project>
+      <Name>test-core_func_integer_bit_count</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_func_integer_find_lsb.vcxproj">
+      <Project>{11FA485B-AE8B-37E6-A153-82DCD0FEB3FB}</Project>
+      <Name>test-core_func_integer_find_lsb</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_func_integer_find_msb.vcxproj">
+      <Project>{FF2CF659-FE2E-3EA0-BF4F-86A1D0E492B8}</Project>
+      <Name>test-core_func_integer_find_msb</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_func_matrix.vcxproj">
+      <Project>{BD47256B-AD2F-35F8-A6FC-FC7F99A09F1A}</Project>
+      <Name>test-core_func_matrix</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_func_noise.vcxproj">
+      <Project>{465278D8-6144-35E1-8782-8877603D43DC}</Project>
+      <Name>test-core_func_noise</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_func_packing.vcxproj">
+      <Project>{69E25B1D-D5C3-3592-9553-8E2EDB824D90}</Project>
+      <Name>test-core_func_packing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_func_swizzle.vcxproj">
+      <Project>{2346A779-ACA9-31C3-B82A-2B7E87554F69}</Project>
+      <Name>test-core_func_swizzle</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_func_trigonometric.vcxproj">
+      <Project>{992737AE-916C-31E6-AE6D-CBBF2942538E}</Project>
+      <Name>test-core_func_trigonometric</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_func_vector_relational.vcxproj">
+      <Project>{9005D55E-4025-3EE6-9012-09B933559FB8}</Project>
+      <Name>test-core_func_vector_relational</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_setup_force_cxx98.vcxproj">
+      <Project>{39E19DB7-A43B-304B-A4CB-42949786B64F}</Project>
+      <Name>test-core_setup_force_cxx98</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_setup_force_size_t_length.vcxproj">
+      <Project>{66D120F0-136B-386E-A5E9-B9A7F5D00E92}</Project>
+      <Name>test-core_setup_force_size_t_length</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_setup_message.vcxproj">
+      <Project>{1BF3E539-E9F6-3FDA-9CE1-B0CABF85DAE3}</Project>
+      <Name>test-core_setup_message</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_setup_platform_unknown.vcxproj">
+      <Project>{79CC65BF-D346-3121-BF92-D4D8FD38FB1F}</Project>
+      <Name>test-core_setup_platform_unknown</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_setup_precision.vcxproj">
+      <Project>{0FBAF0FB-49C5-3AB9-8CBA-F33DA84936B0}</Project>
+      <Name>test-core_setup_precision</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_aligned.vcxproj">
+      <Project>{A01C3012-C852-3D2F-896B-ECE76CB3C982}</Project>
+      <Name>test-core_type_aligned</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_cast.vcxproj">
+      <Project>{B07BD819-F3F7-396D-BDA1-A0C7E3579BBF}</Project>
+      <Name>test-core_type_cast</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_ctor.vcxproj">
+      <Project>{2DC0212A-645B-3F95-8DE8-35B26F964D1F}</Project>
+      <Name>test-core_type_ctor</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_int.vcxproj">
+      <Project>{56B2B881-B6B5-3485-9063-BD0A296C8131}</Project>
+      <Name>test-core_type_int</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_length.vcxproj">
+      <Project>{95F01015-78F6-3BAA-9B6C-EF3FCD6DA854}</Project>
+      <Name>test-core_type_length</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_mat2x2.vcxproj">
+      <Project>{161820E1-1FCA-371D-87CE-6124FF768354}</Project>
+      <Name>test-core_type_mat2x2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_mat2x3.vcxproj">
+      <Project>{9E19F7CC-F0AA-3962-B83A-6FABE3CCF3D2}</Project>
+      <Name>test-core_type_mat2x3</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_mat2x4.vcxproj">
+      <Project>{0F5C8F4F-C509-3B8E-AE0C-FBA12AEE27A2}</Project>
+      <Name>test-core_type_mat2x4</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_mat3x2.vcxproj">
+      <Project>{60F68BDE-C9A4-3B29-8A13-64865F9140AA}</Project>
+      <Name>test-core_type_mat3x2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_mat3x3.vcxproj">
+      <Project>{AAC1039F-9EB9-30E3-AA6D-59AEE4A70D39}</Project>
+      <Name>test-core_type_mat3x3</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_mat3x4.vcxproj">
+      <Project>{23C6235E-BD0B-3EA4-B2CF-204C451D5419}</Project>
+      <Name>test-core_type_mat3x4</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_mat4x2.vcxproj">
+      <Project>{C59B7611-138D-376C-9C84-D3245EA0A789}</Project>
+      <Name>test-core_type_mat4x2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_mat4x3.vcxproj">
+      <Project>{A6D44080-754D-33D1-AB8A-1F9CB0933BE3}</Project>
+      <Name>test-core_type_mat4x3</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_mat4x4.vcxproj">
+      <Project>{8D85C838-322D-3CF5-8CBE-5290BAAC90B6}</Project>
+      <Name>test-core_type_mat4x4</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_vec1.vcxproj">
+      <Project>{FEF211F0-1A3A-3352-90E8-9C6CBD980FFD}</Project>
+      <Name>test-core_type_vec1</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_vec2.vcxproj">
+      <Project>{39422AD4-752E-3085-9C58-48F401ECCC28}</Project>
+      <Name>test-core_type_vec2</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_vec3.vcxproj">
+      <Project>{287E5D4E-832E-3F1D-A4F1-BC6A10D07DCE}</Project>
+      <Name>test-core_type_vec3</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\core\test-core_type_vec4.vcxproj">
+      <Project>{0C31EB30-5C48-3C3B-84A2-D4F31E0EE10F}</Project>
+      <Name>test-core_type_vec4</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_common.vcxproj">
+      <Project>{6E247272-897C-3D3D-888F-0F423D38F360}</Project>
+      <Name>test-ext_matrix_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_int2x2_sized.vcxproj">
+      <Project>{951BBC3F-38AE-3E8A-9C28-5A7072FF3C66}</Project>
+      <Name>test-ext_matrix_int2x2_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_int2x3_sized.vcxproj">
+      <Project>{574C26E1-82D7-3C7A-96B0-83D5FF35E575}</Project>
+      <Name>test-ext_matrix_int2x3_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_int2x4_sized.vcxproj">
+      <Project>{3AD12D6E-25FA-36DA-8F98-7E273DF288B4}</Project>
+      <Name>test-ext_matrix_int2x4_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_int3x2_sized.vcxproj">
+      <Project>{8781CA96-EB26-3737-8B6A-79C8F24D953E}</Project>
+      <Name>test-ext_matrix_int3x2_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_int3x3_sized.vcxproj">
+      <Project>{7EB1157D-BD17-3148-BB1A-88AF68432A58}</Project>
+      <Name>test-ext_matrix_int3x3_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_int3x4_sized.vcxproj">
+      <Project>{6123ABCB-3A91-3F57-BB38-738BE5764040}</Project>
+      <Name>test-ext_matrix_int3x4_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_int4x2_sized.vcxproj">
+      <Project>{4A924679-E2BA-346B-BE8A-364930EF6E8A}</Project>
+      <Name>test-ext_matrix_int4x2_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_int4x3_sized.vcxproj">
+      <Project>{D7B19FE3-162F-3471-A75C-0B0AF81C8464}</Project>
+      <Name>test-ext_matrix_int4x3_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_int4x4_sized.vcxproj">
+      <Project>{785898C3-DD46-35E9-B1CF-BB75EBD960F5}</Project>
+      <Name>test-ext_matrix_int4x4_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_relational.vcxproj">
+      <Project>{C98D3338-54B0-3E03-802E-55FB241C034C}</Project>
+      <Name>test-ext_matrix_relational</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_transform.vcxproj">
+      <Project>{D542C2E7-022B-3526-853A-9CE8C50BE885}</Project>
+      <Name>test-ext_matrix_transform</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_uint2x2_sized.vcxproj">
+      <Project>{21B4C786-9EFA-3F77-AF28-FE4D01B9D717}</Project>
+      <Name>test-ext_matrix_uint2x2_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_uint2x3_sized.vcxproj">
+      <Project>{DC0A9049-5064-3180-B750-E269394D867E}</Project>
+      <Name>test-ext_matrix_uint2x3_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_uint2x4_sized.vcxproj">
+      <Project>{0D645659-25C0-358A-9D31-98D620323E0C}</Project>
+      <Name>test-ext_matrix_uint2x4_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_uint3x2_sized.vcxproj">
+      <Project>{711713AA-D07E-32E9-9A52-4C91FD43B6DF}</Project>
+      <Name>test-ext_matrix_uint3x2_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_uint3x3_sized.vcxproj">
+      <Project>{4385F0A1-7698-3F7F-AC3D-2A62829D559B}</Project>
+      <Name>test-ext_matrix_uint3x3_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_uint3x4_sized.vcxproj">
+      <Project>{FA641D7A-9345-3DF8-B9A6-8E803451D426}</Project>
+      <Name>test-ext_matrix_uint3x4_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_uint4x2_sized.vcxproj">
+      <Project>{76438C84-A01A-3A91-A15E-AAAF35EA0E0E}</Project>
+      <Name>test-ext_matrix_uint4x2_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_uint4x3_sized.vcxproj">
+      <Project>{0B79EBC0-D0EC-31BF-827D-4013C1C3DC6F}</Project>
+      <Name>test-ext_matrix_uint4x3_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_matrix_uint4x4_sized.vcxproj">
+      <Project>{CDA41345-4CDD-358C-90DB-B65C2BD1BE37}</Project>
+      <Name>test-ext_matrix_uint4x4_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_quaternion_common.vcxproj">
+      <Project>{755260FC-D3BF-3EC8-B18E-CA272EB02E18}</Project>
+      <Name>test-ext_quaternion_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_quaternion_exponential.vcxproj">
+      <Project>{99E99925-DBB3-3D07-B7EC-1AFE670EE442}</Project>
+      <Name>test-ext_quaternion_exponential</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_quaternion_geometric.vcxproj">
+      <Project>{E8B52059-FCCC-37B5-AD06-C06F7FE66B96}</Project>
+      <Name>test-ext_quaternion_geometric</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_quaternion_relational.vcxproj">
+      <Project>{08F2E9F6-C8D6-3AD7-BEF5-930D4F2E0B4B}</Project>
+      <Name>test-ext_quaternion_relational</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_quaternion_transform.vcxproj">
+      <Project>{18EB3AE3-94CC-3AB2-8782-397977FAF557}</Project>
+      <Name>test-ext_quaternion_transform</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_quaternion_trigonometric.vcxproj">
+      <Project>{57386742-DBC3-3BA6-BF23-045150E339D8}</Project>
+      <Name>test-ext_quaternion_trigonometric</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_quaternion_type.vcxproj">
+      <Project>{DA0290FA-B77F-3C29-9EB7-DB3456D7A184}</Project>
+      <Name>test-ext_quaternion_type</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_scalar_common.vcxproj">
+      <Project>{4D3D0D11-A563-31D5-89F8-D7CB42D3DE3C}</Project>
+      <Name>test-ext_scalar_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_scalar_constants.vcxproj">
+      <Project>{EFD9478E-4BEC-3674-AB45-E21D3D5146BB}</Project>
+      <Name>test-ext_scalar_constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_scalar_int_sized.vcxproj">
+      <Project>{5B16C6B6-417E-321F-9A21-6F14F2EBDF01}</Project>
+      <Name>test-ext_scalar_int_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_scalar_integer.vcxproj">
+      <Project>{971A7A02-A817-3AC3-9F72-0ADEE6CBBE12}</Project>
+      <Name>test-ext_scalar_integer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_scalar_relational.vcxproj">
+      <Project>{368739C1-C2B4-3B82-BB74-0B527195A74E}</Project>
+      <Name>test-ext_scalar_relational</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_scalar_uint_sized.vcxproj">
+      <Project>{49BE6ADB-A941-3287-BE8F-EF7225EA7BD0}</Project>
+      <Name>test-ext_scalar_uint_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_scalar_ulp.vcxproj">
+      <Project>{72DE08B7-8BF4-3DAE-A1E8-04495A56F9FB}</Project>
+      <Name>test-ext_scalar_ulp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_vec1.vcxproj">
+      <Project>{15A107D5-5E35-3438-88DE-47D0D4B3AC56}</Project>
+      <Name>test-ext_vec1</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_vector_bool1.vcxproj">
+      <Project>{59DC7060-C549-370F-83C4-62F18EA2813F}</Project>
+      <Name>test-ext_vector_bool1</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_vector_common.vcxproj">
+      <Project>{A08D14CE-07DF-3556-8401-FAA349B91B67}</Project>
+      <Name>test-ext_vector_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_vector_iec559.vcxproj">
+      <Project>{2188BA1A-81DD-3D04-908A-893D4BF74F4E}</Project>
+      <Name>test-ext_vector_iec559</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_vector_int1_sized.vcxproj">
+      <Project>{C819523C-0A85-3379-96D6-A39667980DCF}</Project>
+      <Name>test-ext_vector_int1_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_vector_int2_sized.vcxproj">
+      <Project>{BB888F83-656F-332D-A4D3-E22E5DA78B6F}</Project>
+      <Name>test-ext_vector_int2_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_vector_int3_sized.vcxproj">
+      <Project>{D21882EE-C24B-3677-9060-FE7A40EBA2D3}</Project>
+      <Name>test-ext_vector_int3_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_vector_int4_sized.vcxproj">
+      <Project>{7D7C268E-0724-3894-9594-F277BB34D566}</Project>
+      <Name>test-ext_vector_int4_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_vector_integer.vcxproj">
+      <Project>{42D3169D-D2FE-3AE4-B1E1-1084FBEBF7B7}</Project>
+      <Name>test-ext_vector_integer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_vector_integer_sized.vcxproj">
+      <Project>{A484602C-A43C-3975-B750-487AC1A1CAFD}</Project>
+      <Name>test-ext_vector_integer_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_vector_relational.vcxproj">
+      <Project>{C3DA0D58-7BA4-38AE-B3A3-0D43F9E197FE}</Project>
+      <Name>test-ext_vector_relational</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_vector_uint1_sized.vcxproj">
+      <Project>{3253182E-F5A9-321E-81E3-649B2663B824}</Project>
+      <Name>test-ext_vector_uint1_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_vector_uint2_sized.vcxproj">
+      <Project>{B8CAF903-6FFC-3793-B329-17519DA195D8}</Project>
+      <Name>test-ext_vector_uint2_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_vector_uint3_sized.vcxproj">
+      <Project>{B6028F24-2B6B-3AF6-9E74-268AF596FFD4}</Project>
+      <Name>test-ext_vector_uint3_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_vector_uint4_sized.vcxproj">
+      <Project>{B3F5B76C-FD88-3373-8636-32C944FE116D}</Project>
+      <Name>test-ext_vector_uint4_sized</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\ext\test-ext_vector_ulp.vcxproj">
+      <Project>{4455A4E9-CC40-33DC-A134-59EA0E48A74E}</Project>
+      <Name>test-ext_vector_ulp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_bitfield.vcxproj">
+      <Project>{5A65FABE-A39A-3B3C-9D94-BD52F49CCD17}</Project>
+      <Name>test-gtc_bitfield</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_color_space.vcxproj">
+      <Project>{323361BF-EBE9-3A9A-8B4E-216F43240CB1}</Project>
+      <Name>test-gtc_color_space</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_constants.vcxproj">
+      <Project>{1E3746A9-6781-3362-A2E9-E3880B97EE26}</Project>
+      <Name>test-gtc_constants</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_epsilon.vcxproj">
+      <Project>{A3D688D3-7C9B-3EDB-85F8-0D0A497DA084}</Project>
+      <Name>test-gtc_epsilon</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_integer.vcxproj">
+      <Project>{54A828AA-2935-36C1-A484-697476AD8AF5}</Project>
+      <Name>test-gtc_integer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_matrix_access.vcxproj">
+      <Project>{037B0069-A295-3D84-A8D4-5D6C63E4BB5C}</Project>
+      <Name>test-gtc_matrix_access</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_matrix_integer.vcxproj">
+      <Project>{E5E862BC-0ED8-359E-B5DF-F88BB4AB3092}</Project>
+      <Name>test-gtc_matrix_integer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_matrix_inverse.vcxproj">
+      <Project>{129164C4-AE28-31E0-AD2D-73279EB151D5}</Project>
+      <Name>test-gtc_matrix_inverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_matrix_transform.vcxproj">
+      <Project>{CB722000-4C12-3BE1-B9E8-B671866347A3}</Project>
+      <Name>test-gtc_matrix_transform</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_noise.vcxproj">
+      <Project>{D2A51DBD-C7FA-302B-B81F-8D4F413FAE86}</Project>
+      <Name>test-gtc_noise</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_packing.vcxproj">
+      <Project>{4FD2945B-6D2A-3B07-B10B-42D14AD17E32}</Project>
+      <Name>test-gtc_packing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_quaternion.vcxproj">
+      <Project>{DF0531A1-B04B-3E7D-8A6F-F29FB05CA637}</Project>
+      <Name>test-gtc_quaternion</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_random.vcxproj">
+      <Project>{C5D49CC4-78E2-3951-B44A-2DF8A0F00FAA}</Project>
+      <Name>test-gtc_random</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_reciprocal.vcxproj">
+      <Project>{DE47DD87-8097-3AC5-AE6F-2DDCDD20AF0D}</Project>
+      <Name>test-gtc_reciprocal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_round.vcxproj">
+      <Project>{A1471844-466B-300C-89DA-A34135249309}</Project>
+      <Name>test-gtc_round</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_type_aligned.vcxproj">
+      <Project>{4A3076C6-3696-3778-BDA0-95D023A66F33}</Project>
+      <Name>test-gtc_type_aligned</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_type_precision.vcxproj">
+      <Project>{5AF2D9D8-BA2A-3230-9E3A-61242608275A}</Project>
+      <Name>test-gtc_type_precision</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_type_ptr.vcxproj">
+      <Project>{0A57832D-49CC-3911-9427-97D0DF86B736}</Project>
+      <Name>test-gtc_type_ptr</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_ulp.vcxproj">
+      <Project>{B80DC5B4-653B-3E17-8F20-0475723AB6A6}</Project>
+      <Name>test-gtc_ulp</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtc\test-gtc_vec1.vcxproj">
+      <Project>{85E0D929-0D5B-3CC9-99C2-A237920AACAE}</Project>
+      <Name>test-gtc_vec1</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx.vcxproj">
+      <Project>{E964D3FC-BCF6-3101-AD18-DE90782B3909}</Project>
+      <Name>test-gtx</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_associated_min_max.vcxproj">
+      <Project>{3BADA832-5277-3B68-968F-DE4937A03A28}</Project>
+      <Name>test-gtx_associated_min_max</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_closest_point.vcxproj">
+      <Project>{8F5FFB71-991A-31D4-99AB-B21EF1174998}</Project>
+      <Name>test-gtx_closest_point</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_color_encoding.vcxproj">
+      <Project>{89252C98-3ABA-305D-85D6-5360FFA052BC}</Project>
+      <Name>test-gtx_color_encoding</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_color_space.vcxproj">
+      <Project>{4143D64A-3184-365A-B27D-AC7B77152BB8}</Project>
+      <Name>test-gtx_color_space</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_color_space_YCoCg.vcxproj">
+      <Project>{1C216E97-A832-3E94-83D0-A150848AE3FB}</Project>
+      <Name>test-gtx_color_space_YCoCg</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_common.vcxproj">
+      <Project>{C5E156EF-0C8B-3A89-9EF0-AC3665746943}</Project>
+      <Name>test-gtx_common</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_compatibility.vcxproj">
+      <Project>{0E0F2089-F106-3484-8056-787C55F0149D}</Project>
+      <Name>test-gtx_compatibility</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_component_wise.vcxproj">
+      <Project>{623CA91B-F7EE-35C7-A9E8-87D87ECC0427}</Project>
+      <Name>test-gtx_component_wise</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_dual_quaternion.vcxproj">
+      <Project>{BE876CF5-9024-33FB-A14B-43FAFB6B6BEE}</Project>
+      <Name>test-gtx_dual_quaternion</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_easing.vcxproj">
+      <Project>{455509A7-5A12-36B0-B78C-14D5DF0FFF4E}</Project>
+      <Name>test-gtx_easing</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_euler_angle.vcxproj">
+      <Project>{E1EDE37B-12E0-3752-A3E5-D29C60D7EA21}</Project>
+      <Name>test-gtx_euler_angle</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_extend.vcxproj">
+      <Project>{5B93064F-A4F4-396C-A229-3D7096F347E0}</Project>
+      <Name>test-gtx_extend</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_extended_min_max.vcxproj">
+      <Project>{6E82A348-065D-3DFC-9478-E5F86562FE00}</Project>
+      <Name>test-gtx_extended_min_max</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_exterior_product.vcxproj">
+      <Project>{8B2968F1-D46D-30A5-AC02-EEB66E93D28F}</Project>
+      <Name>test-gtx_exterior_product</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_fast_exponential.vcxproj">
+      <Project>{B4FDC936-1124-3380-A125-9C9ED4DFBC92}</Project>
+      <Name>test-gtx_fast_exponential</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_fast_square_root.vcxproj">
+      <Project>{D72C5028-7F9E-35DD-BB4B-36DEAB265732}</Project>
+      <Name>test-gtx_fast_square_root</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_fast_trigonometry.vcxproj">
+      <Project>{75072C0F-BDFA-3915-A2BB-F7D489565CE0}</Project>
+      <Name>test-gtx_fast_trigonometry</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_functions.vcxproj">
+      <Project>{85D115C8-E416-37B7-9CFC-82043E01BA9C}</Project>
+      <Name>test-gtx_functions</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_gradient_paint.vcxproj">
+      <Project>{2720B602-467C-3A62-9AFE-942FC53AF5C6}</Project>
+      <Name>test-gtx_gradient_paint</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_handed_coordinate_space.vcxproj">
+      <Project>{5D3D2A01-B59F-389B-89CB-EFB5A5E677E0}</Project>
+      <Name>test-gtx_handed_coordinate_space</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_integer.vcxproj">
+      <Project>{12E9E0EE-BD7E-36D9-A1A2-C767B96FA722}</Project>
+      <Name>test-gtx_integer</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_intersect.vcxproj">
+      <Project>{CFA05768-D235-35C8-AC4D-2E2415DCE83D}</Project>
+      <Name>test-gtx_intersect</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_io.vcxproj">
+      <Project>{BBA02173-1B4A-3FF2-ACDA-B49393E7EAED}</Project>
+      <Name>test-gtx_io</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_load.vcxproj">
+      <Project>{119DEDCB-2D8E-3918-9FCB-73FCCC8DF10C}</Project>
+      <Name>test-gtx_load</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_log_base.vcxproj">
+      <Project>{4E1C8868-9E22-32E0-BDAA-B6AA782181FB}</Project>
+      <Name>test-gtx_log_base</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_matrix_cross_product.vcxproj">
+      <Project>{C4F97C72-4E07-32DC-884B-94B49B22C004}</Project>
+      <Name>test-gtx_matrix_cross_product</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_matrix_decompose.vcxproj">
+      <Project>{39879C52-8A76-3536-BD6C-BBF8F067B6B4}</Project>
+      <Name>test-gtx_matrix_decompose</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_matrix_factorisation.vcxproj">
+      <Project>{1DE54938-A87F-3EE1-BE73-5920ECE79B63}</Project>
+      <Name>test-gtx_matrix_factorisation</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_matrix_interpolation.vcxproj">
+      <Project>{E82C4E43-A141-3434-BCFD-1E3DB3089AF0}</Project>
+      <Name>test-gtx_matrix_interpolation</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_matrix_major_storage.vcxproj">
+      <Project>{BB64092E-C49B-38E9-B436-47926093D0DE}</Project>
+      <Name>test-gtx_matrix_major_storage</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_matrix_operation.vcxproj">
+      <Project>{8B5D2F21-A676-30D2-BBEF-D4019D21225C}</Project>
+      <Name>test-gtx_matrix_operation</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_matrix_query.vcxproj">
+      <Project>{991190A1-8B82-3600-BA5A-69511DA43621}</Project>
+      <Name>test-gtx_matrix_query</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_matrix_transform_2d.vcxproj">
+      <Project>{232B5A18-92CB-3087-8489-9BE1788E95FD}</Project>
+      <Name>test-gtx_matrix_transform_2d</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_norm.vcxproj">
+      <Project>{F75596A3-EBD9-3B6A-A1A7-DE393F60E9DE}</Project>
+      <Name>test-gtx_norm</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_normal.vcxproj">
+      <Project>{7D2DAB21-6D51-3697-BBF0-BD397CD88753}</Project>
+      <Name>test-gtx_normal</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_normalize_dot.vcxproj">
+      <Project>{533CFD9C-5FED-3B8C-8246-7A0DCC3FCDD9}</Project>
+      <Name>test-gtx_normalize_dot</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_number_precision.vcxproj">
+      <Project>{219C339A-8ED9-3F3C-92F3-BDC237E6C44F}</Project>
+      <Name>test-gtx_number_precision</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_optimum_pow.vcxproj">
+      <Project>{901B4F27-D4EF-3B4B-96F0-66BC64BB78A9}</Project>
+      <Name>test-gtx_optimum_pow</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_orthonormalize.vcxproj">
+      <Project>{8B3B0F2E-5372-3709-9314-0B2377F8CCB0}</Project>
+      <Name>test-gtx_orthonormalize</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_perpendicular.vcxproj">
+      <Project>{38E811B2-A636-3EA3-8C24-CA192C61DA46}</Project>
+      <Name>test-gtx_perpendicular</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_polar_coordinates.vcxproj">
+      <Project>{933FD6E8-C4E3-3613-BCF8-A8F584969819}</Project>
+      <Name>test-gtx_polar_coordinates</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_projection.vcxproj">
+      <Project>{156A788A-4D25-3C44-8F87-E23B68569CB7}</Project>
+      <Name>test-gtx_projection</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_quaternion.vcxproj">
+      <Project>{C7E15D62-C8B8-3C49-84A6-3FA65B38C0CB}</Project>
+      <Name>test-gtx_quaternion</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_range.vcxproj">
+      <Project>{53BF6860-DA9D-3E7B-913C-60891AB869E4}</Project>
+      <Name>test-gtx_range</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_rotate_normalized_axis.vcxproj">
+      <Project>{57C6DF10-9935-3DB0-B8EE-C38809B82677}</Project>
+      <Name>test-gtx_rotate_normalized_axis</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_rotate_vector.vcxproj">
+      <Project>{B5BBF2ED-C1E0-3E8E-BE77-ECED46827DBB}</Project>
+      <Name>test-gtx_rotate_vector</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_scalar_multiplication.vcxproj">
+      <Project>{FF67CDA6-818B-38BD-9C58-0CE86B39D87A}</Project>
+      <Name>test-gtx_scalar_multiplication</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_scalar_relational.vcxproj">
+      <Project>{E98502EF-B887-32DD-91DE-F0875F9FB3AF}</Project>
+      <Name>test-gtx_scalar_relational</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_spline.vcxproj">
+      <Project>{9B9D3F2A-2E3A-3EA6-A375-440A3DF82F1F}</Project>
+      <Name>test-gtx_spline</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_string_cast.vcxproj">
+      <Project>{F834ECB0-408D-3F4A-8E30-827A73F6D1CC}</Project>
+      <Name>test-gtx_string_cast</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_texture.vcxproj">
+      <Project>{A24E9E8D-5E32-3E64-A255-9406F9E08F38}</Project>
+      <Name>test-gtx_texture</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_type_aligned.vcxproj">
+      <Project>{576395B4-3A95-360B-9427-C7CC066611D9}</Project>
+      <Name>test-gtx_type_aligned</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_type_trait.vcxproj">
+      <Project>{95FC29BA-02CA-38F5-B2AB-32E9E3B5539E}</Project>
+      <Name>test-gtx_type_trait</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_vec_swizzle.vcxproj">
+      <Project>{4C83C773-1756-3A75-9132-E51C8E90EA5C}</Project>
+      <Name>test-gtx_vec_swizzle</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_vector_angle.vcxproj">
+      <Project>{2CBA21A3-4243-3EB1-9C83-3A9D1875BEC4}</Project>
+      <Name>test-gtx_vector_angle</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_vector_query.vcxproj">
+      <Project>{01DB93A9-BAC0-3040-858A-FAABAF6295F9}</Project>
+      <Name>test-gtx_vector_query</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\gtx\test-gtx_wrap.vcxproj">
+      <Project>{C8BA48DF-9AB3-38DE-B740-155B63D490DA}</Project>
+      <Name>test-gtx_wrap</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\perf\test-perf_matrix_div.vcxproj">
+      <Project>{A07D62F4-5EDE-3A1F-A1C7-14AC9A71B3DA}</Project>
+      <Name>test-perf_matrix_div</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\perf\test-perf_matrix_inverse.vcxproj">
+      <Project>{F241AF07-D2EB-3083-B2C1-98345148CB35}</Project>
+      <Name>test-perf_matrix_inverse</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\perf\test-perf_matrix_mul.vcxproj">
+      <Project>{E38BBB11-7E6A-36EA-8167-9E382B5C7805}</Project>
+      <Name>test-perf_matrix_mul</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\perf\test-perf_matrix_mul_vector.vcxproj">
+      <Project>{CC69CF61-A6E0-3C33-B3E9-5EC051F6E2F0}</Project>
+      <Name>test-perf_matrix_mul_vector</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\perf\test-perf_matrix_transpose.vcxproj">
+      <Project>{E9BD5F10-BD36-331A-8F34-E1E374DBD461}</Project>
+      <Name>test-perf_matrix_transpose</Name>
+    </ProjectReference>
+    <ProjectReference Include="D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glm\Bin\test\perf\test-perf_vector_mul_matrix.vcxproj">
+      <Project>{E9A1EA72-14F3-32F7-9513-B8168F445EE9}</Project>
+      <Name>test-perf_vector_mul_matrix</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

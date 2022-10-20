@@ -1,0 +1,5 @@
+﻿     Creating library D:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glfw-3.3.6/glfw-3.3.6/Bin/tests/Debug/reopen.lib and object D:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glfw-3.3.6/glfw-3.3.6/Bin/tests/Debug/reopen.exp
+glfw3.lib(vulkan.obj) : error LNK2019: unresolved external symbol vkGetInstanceProcAddr referenced in function glfwGetInstanceProcAddress
+glfw3.lib(win32_window.obj) : error LNK2001: unresolved external symbol vkGetInstanceProcAddr
+glfw3.lib(vulkan.obj) : error LNK2019: unresolved external symbol vkEnumerateInstanceExtensionProperties referenced in function _glfwInitVulkan
+D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\External\glfw-3.3.6\glfw-3.3.6\Bin\tests\Debug\reopen.exe : fatal error LNK1120: 2 unresolved externals

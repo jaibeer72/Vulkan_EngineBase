@@ -1,0 +1,10 @@
+^D:\VISUAL STUDIO PROJECTS\VSPROJS\OPENGL_ENGINEBASE\EXTERNAL\GLM\BIN\CMAKEFILES\9A6311553BDCD5F8A0D0C032D365B918\GENERATE.STAMP.RULE
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm" "-BD:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm/Bin" --check-stamp-list CMakeFiles/generate.stamp.list --vs-solution-file "D:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glm/Bin/glm.sln"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

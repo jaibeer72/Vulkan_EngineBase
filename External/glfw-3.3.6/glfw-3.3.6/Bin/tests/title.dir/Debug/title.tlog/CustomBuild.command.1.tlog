@@ -1,0 +1,10 @@
+^D:\VISUAL STUDIO PROJECTS\VSPROJS\OPENGL_ENGINEBASE\EXTERNAL\GLFW-3.3.6\GLFW-3.3.6\TESTS\CMAKELISTS.TXT
+setlocal
+"C:\Program Files\CMake\bin\cmake.exe" "-SD:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glfw-3.3.6/glfw-3.3.6" "-BD:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glfw-3.3.6/glfw-3.3.6/Bin" --check-stamp-file "D:/visual Studio Projects/VSProjs/OpenGL_EngineBase/External/glfw-3.3.6/glfw-3.3.6/Bin/tests/CMakeFiles/generate.stamp"
+if %errorlevel% neq 0 goto :cmEnd
+:cmEnd
+endlocal & call :cmErrorLevel %errorlevel% & goto :cmDone
+:cmErrorLevel
+exit /b %1
+:cmDone
+if %errorlevel% neq 0 goto :VCEnd

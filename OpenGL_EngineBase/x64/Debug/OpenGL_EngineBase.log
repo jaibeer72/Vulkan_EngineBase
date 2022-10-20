@@ -1,0 +1,9 @@
+﻿  IApp.cpp
+D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\OpenGL_EngineBase\VkDebugUtils.h(19,2): warning C4091: 'static ': ignored on left of 'Engine_VkDebugUtils' when no variable is declared
+  main.cpp
+D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\OpenGL_EngineBase\VkDebugUtils.h(19,2): warning C4091: 'static ': ignored on left of 'Engine_VkDebugUtils' when no variable is declared
+  VkDebugUtils.cpp
+D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\OpenGL_EngineBase\VkDebugUtils.h(19,2): warning C4091: 'static ': ignored on left of 'Engine_VkDebugUtils' when no variable is declared
+  Generating Code...
+     Creating library D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\x64\Debug\OpenGL_EngineBase.lib and object D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\x64\Debug\OpenGL_EngineBase.exp
+  OpenGL_EngineBase.vcxproj -> D:\visual Studio Projects\VSProjs\OpenGL_EngineBase\x64\Debug\OpenGL_EngineBase.exe
